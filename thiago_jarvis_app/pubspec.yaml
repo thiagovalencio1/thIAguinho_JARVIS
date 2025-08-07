@@ -1,0 +1,32 @@
+name: thiago_jarvis_app
+description: Um assistente automotivo com IA para Android e iOS.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_bluetooth_serial: ^0.4.0 # Para comunicação Bluetooth clássica
+  permission_handler: ^11.0.1 # Para gerenciar permissões de Bluetooth e localização
+  provider: ^6.0.5 # Para gerenciamento de estado
+  speech_to_text: ^6.3.0 # Para reconhecimento de fala
+  flutter_tts: ^3.8.3 # Para Text-to-Speech
+  http: ^1.1.0 # Para chamadas de API (IA, dados externos)
+  shared_preferences: ^2.2.2 # Para armazenamento local de dados
+  fl_chart: ^0.65.0 # Para gráficos (dados históricos)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+
